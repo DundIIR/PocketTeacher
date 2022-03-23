@@ -1,10 +1,6 @@
 <?php
-    echo "Project";
-    echo "Semenova Ann";
-
-
-    echo "Авторы проекта";
-    echo "Рузин Данил Евгеньевич";
-    echo "также "
+    echo "Project\n";
+    echo "Semenova Ann\n";
+    echo "Рузин Данил Евгеньевич\n";
   ?>
 
