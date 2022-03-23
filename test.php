@@ -1,6 +1,6 @@
 <?php
     echo "Project";
-    echo "Semenova Ann"
+    echo "Semenova Ann";
 
 
     echo "Авторы проекта";
