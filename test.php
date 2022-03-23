@@ -1,2 +1,5 @@
 <?php
-    phpinfo();
+    echo "Project";
+    echo "Semenova Ann"
+?>
+
