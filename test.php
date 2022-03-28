@@ -1,6 +1,6 @@
 <?php
     echo "Project\n";
-    echo "Semenova Ann\n";
+    echo "Семенова Анна\n";
     echo "Рузин Данил Евгеньевич\n<br/>";
     echo "Титарев Андрей Андреевич\n";
   ?>
