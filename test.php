@@ -1,7 +1,7 @@
 <?php
-    echo "Project\n";
-    echo "Семенова Анна\n";
-    echo "Рузин Данил Евгеньевич\n<br/>";
+    echo "Project: Pocket Teacher <br/>";
+    echo "Семенова Анна<br/>";
+    echo "Рузин Данил Евгеньевич<br/>";
     echo "Титарев Андрей Андреевич\n";
-  ?>
+
 
