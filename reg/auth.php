@@ -19,7 +19,7 @@
 
     if(mysqli_num_rows($check_user) > 0){
         $user = mysqli_fetch_assoc($check_user);
-        print_r($user);
+        header('Location: ../test.html');
 
     }
     else{
