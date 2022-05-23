@@ -5,11 +5,11 @@
 }
 
 body {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: Montserrat, sans-serif;
+    height: 100vh;
 }
 
 form {
@@ -35,11 +35,10 @@ input {
     border: unset;
     border-bottom: 2px solid #e3e3e3;
     outline: none;
-
 }
 button {
     padding: 10px;
-    background: #25b416;
+    background: #3ab22e;
     border: unset;
     cursor: pointer;
     border-radius: 10px;
@@ -56,7 +55,7 @@ button {
 
 .msg_1 {
     border: unset;
-    color: #25b416;
+    color: #20bd0f;
     font-weight: lighter;
 }
 
@@ -66,6 +65,13 @@ button {
     top: 50%;
     transform: translate(-50%);
     cursor: pointer;
+}
+
+#logoTwo {
+    position: absolute;
+    left: -5px;
+    top: -10px;
+
 }
 
 /*.ellipse{*/
