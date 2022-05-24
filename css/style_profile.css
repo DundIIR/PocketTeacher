@@ -92,13 +92,15 @@ header{
     display: block;
 
 }
+.image_center {
+    display: block;
+    margin: auto;
 
-.exit{
-    bottom: 0;
-    right: 0;
 }
 
+.text{
 
+}
 /*.intro{*/
 /*    width: 100%;*/
 /*    height: 100vh;*/
