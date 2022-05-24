@@ -27,12 +27,12 @@
                 <a class="nav_link" href="#">Добавить</a>
                 <a class="nav_link" href="#">Изменить</a>
                 <a class="nav_link" href="#">Удалить</a>
-                <a class="nav_link" href="exit.php">Выход</a>
+
             </naw>
         </div>
     </div>
 </header>
-
+<a class="exit" href="exit.php">Выход</a>
 
 
 </body>
