@@ -1,9 +1,11 @@
 <?php
+
     session_start();
     if(!$_SESSION['user']){
     header('Location: index.php');
 }
 ?>
+
 
 <!doctype html>
 <html lang="ru">
