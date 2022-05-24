@@ -1,6 +1,10 @@
 <?php
 
-session_start();
+    session_start();
+    if($_SESSION['user']){
+        header('Location: ../test.php');
+    }
+
 ?>
 
 <!doctype html>
@@ -16,8 +20,11 @@ session_start();
 </head>
 <body>
 
-<a href="https://t.me/students_pocket_teacher_bot"> <img src="qr.png" alt="Picture" height="300px"></a>
-<img src="log2.jpg" id="logoTwo" alt="Picture" height="100px">
+
+<a href="https://t.me/students_pocket_teacher_bot"> <img class="qr" src="images/qr.png" alt="Picture" height="300px"></a>
+<img src="images/log2.jpg" id="logoTwo" alt="Picture" height="100px">
+
+
 <!--
     <div class="container mt-4">
         <div class="row">

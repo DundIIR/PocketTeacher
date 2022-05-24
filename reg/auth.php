@@ -19,7 +19,8 @@
 
     if(mysqli_num_rows($check_user) > 0){
         $user = mysqli_fetch_assoc($check_user);
-        print_r($user);
+        $_SESSION['user'] = 1;
+        header('Location: ../test.php');
 
     }
     else{

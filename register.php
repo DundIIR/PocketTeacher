@@ -1,5 +1,8 @@
 <?php
     session_start();
+    if($_SESSION['user']){
+        header('Location: ../test.php');
+    }
 ?>
 
 <!doctype html>
@@ -13,7 +16,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<a href="https://t.me/students_pocket_teacher_bot"> <img class="qr" src="images/qr.png" alt="Picture" height="300px"></a>
+<img src="images/log2.jpg" id="logoTwo" alt="Picture" height="100px">
     <div class="container mt-4">
         <p class="msg_2">
             <?php

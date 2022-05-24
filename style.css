@@ -19,9 +19,13 @@ form {
 }
 
 a {
-    color: #71a3cc;
+    color: #2776d7;
 
     text-decoration: none;
+}
+
+.qr{
+    margin: 10px;
 }
 
 p {
@@ -38,12 +42,17 @@ input {
 }
 button {
     padding: 10px;
-    background: #3ab22e;
+
+    background: #33d73b;
+
     border: unset;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 7px;
     font-weight: bolder;
     font-size: 16px;
+}
+button:hover{
+    background: #24c42a;
 }
 
 .msg_2 {
