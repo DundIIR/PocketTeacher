@@ -1,7 +1,10 @@
 <?php
 
     session_start();
-    if(!$_SESSION['user']){
+    if($_COOKIE[user] == ""){
+    header('Location: index.php');
+    }
+    elseif(!$_SESSION['user']){
     header('Location: index.php');
 }
     require_once 'reg/connect.php';
@@ -9,7 +12,7 @@
 
 
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -27,9 +30,8 @@
                 <div class="header_logo"><img src="images/log2.jpg" id="logoTwo" alt="Picture" height="50px">Pocket Teacher</div>
 
                 <naw class="nav">
+                    <a class="nav_link" href="#"><?=$_COOKIE[login]?></a>
                     <a class="nav_link" href="#">Добавить</a>
-                    <a class="nav_link" href="#">Изменить</a>
-                    <a class="nav_link" href="#">Удалить</a>
                     <a class="nav_link" href="exit.php">Выход</a>
 
                 </naw>
@@ -58,14 +60,13 @@
            <img src="images/tm.jpg" alt="Picture" height="400px" class="image_center"></a>
         </div>
         <div class="table_had">
-            <form action="">
-                <input type="text" class="form-control" name="room"
-                       id="room" placeholder="Введите номер"><br>
+            <form action="create.php" method="post">
+
                 <input type="text" class="form-control" name="word"
-                       id="word" placeholder="Введите слово">
+                       id="word" placeholder="Введите слово" autocomplete="off"><br>
                 <input type="text" class="form-control" name="translate"
-                       id="translate" placeholder="Введите перевод"><br>
-                <button class="nav_link" type="submit">Добавить</button>
+                       id="translate" placeholder="Введите перевод" autocomplete="off"><br>
+                <button type="submit">Добавить</button>
             </form>
         </div>
         <div class="table overflow">
@@ -77,87 +78,17 @@
                 </tr>
                 <tr>
                     <?php
-                        $word_and_translate = mysqli_query($connect, "SELECT * FROM `word_and_translate`");
+                        $word_and_translate = mysqli_query($connect, "SELECT * FROM `word_and_translate` WHERE `user_id` = '$_COOKIE[user]'");
                         $word_and_translate = mysqli_fetch_all($word_and_translate);
                         foreach ($word_and_translate as $item) {
                             ?>
                             <tr>
-                                <td><?=$item[0] ?></td>
-                                <td><?=$item[2] ?></td>
-                                <td><?=$item[3] ?></td>
+                                <td><?=$i+=1?></td>
+                                <td><?=$item[2]?></td>
+                                <td><?=$item[3]?></td>
+                                <td height="30px" ><a href="update.php?id=<?=$item[0]?>"><img src="images/pen.png" alt="Picture" height="15px"></a></td>
+                                <td><a href="delete.php?id=<?=$item[0]?>"><img src="images/close.png" alt="Picture" height="15px"></a></td>
                             </tr>
-                <tr>
-                    <td><?=$item[0] ?></td>
-                    <td><?=$item[2] ?></td>
-                    <td><?=$item[3] ?></td>
-                </tr>
-                <tr>
-                    <td><?=$item[0] ?></td>
-                    <td><?=$item[2] ?></td>
-                    <td><?=$item[3] ?></td>
-                </tr>
-                <tr>
-                    <td><?=$item[0] ?></td>
-                    <td><?=$item[2] ?></td>
-                    <td><?=$item[3] ?></td>
-                </tr>
-                <tr>
-                    <td><?=$item[0] ?></td>
-                    <td><?=$item[2] ?></td>
-                    <td><?=$item[3] ?></td>
-                </tr>                           <tr>
-                    <td><?=$item[0] ?></td>
-                    <td><?=$item[2] ?></td>
-                    <td><?=$item[3] ?></td>
-                </tr>                           <tr>
-                    <td><?=$item[0] ?></td>
-                    <td><?=$item[2] ?></td>
-                    <td><?=$item[3] ?></td>
-                </tr>
-                <tr>
-                    <td><?=$item[0] ?></td>
-                    <td><?=$item[2] ?></td>
-                    <td><?=$item[3] ?></td>
-                </tr>
-                <tr>
-                    <td><?=$item[0] ?></td>
-                    <td><?=$item[2] ?></td>
-                    <td><?=$item[3] ?></td>
-                </tr>                           <tr>
-                    <td><?=$item[0] ?></td>
-                    <td><?=$item[2] ?></td>
-                    <td><?=$item[3] ?></td>
-                </tr>                           <tr>
-                    <td><?=$item[0] ?></td>
-                    <td><?=$item[2] ?></td>
-                    <td><?=$item[3] ?></td>
-                </tr>
-                <tr>
-                    <td><?=$item[0] ?></td>
-                    <td><?=$item[2] ?></td>
-                    <td><?=$item[3] ?></td>
-                </tr>
-                <tr>
-                    <td><?=$item[0] ?></td>
-                    <td><?=$item[2] ?></td>
-                    <td><?=$item[3] ?></td>
-                </tr>                           <tr>
-                    <td><?=$item[0] ?></td>
-                    <td><?=$item[2] ?></td>
-                    <td><?=$item[3] ?></td>
-                </tr>                           <tr>
-                    <td><?=$item[0] ?></td>
-                    <td><?=$item[2] ?></td>
-                    <td><?=$item[3] ?></td>
-                </tr>
-                <tr>
-                    <td><?=$item[0] ?></td>
-                    <td><?=$item[2] ?></td>
-                    <td><?=$item[3] ?></td>
-                </tr>
-
-
-
                             <?php
                         }
                     ?>

@@ -14,13 +14,20 @@
 //    $result = $mysql->query("SELECT * FROM `users` WHERE `login` = `$login` AND `pass` = `$pass`");
 
 
-    $check_user = mysqli_query($connect, "SELECT * FROM `users` WHERE `login` = '$login' AND `password` = '$pass'");
+
+    $check_user = mysqli_query($connect, "SELECT `id`, `login` FROM `users` WHERE `login` = '$login' AND `password` = '$pass'");
+
 
 
     if(mysqli_num_rows($check_user) > 0){
         $user = mysqli_fetch_assoc($check_user);
+        setcookie('user', $user['id'], time() + 3600, "/");
+        setcookie('login', $user['login'], time() + 3600, "/");
         $_SESSION['user'] = 1;
-        header('Location: ../test.php');
+        header('Location: ../profile.php');
+
+
+
 
     }
     else{

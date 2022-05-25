@@ -7,7 +7,7 @@
     $email = $_POST['email'];
 
 
-    if(mb_strlen($login) < 5 || mb_strlen($login) > 30) {
+    if(mb_strlen($login) < 3 || mb_strlen($login) > 30) {
        $_SESSION['message'] = "Такой логин недопустим!";
        header('Location: ../register.php');
     }
