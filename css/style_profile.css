@@ -92,6 +92,10 @@ h1, h2, h3, h4, h5, h6{
     display: block;
 
 }
+.image_center {
+    display: block;
+    margin: auto;
+
 
 .image_center {
     display: block;
@@ -154,6 +158,6 @@ h1, h2, h3, h4, h5, h6{
 
 ::-webkit-scrollbar-thumb:hover{
     background: #1a1414
-}
+
 
 

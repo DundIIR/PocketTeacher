@@ -1,4 +1,5 @@
 <?php
+
     session_start();
     if(!$_SESSION['user']){
     header('Location: index.php');
@@ -18,6 +19,7 @@
     <link rel="stylesheet" href="css/style_profile.css">
 </head>
 <body>
+
 <div class="wrap">
     <div class="header">
         <div class="container">
@@ -160,9 +162,9 @@
                     ?>
                 </tr>
             </table>
-        </div>
-    </div>
+
 </div>
+
 
 
 </body>

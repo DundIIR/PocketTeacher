@@ -1,4 +1,5 @@
 <?php
+
     session_start();
     if($_SESSION['user']){
         header('Location: ../test.php');
@@ -15,12 +16,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Форма авторизации</title>
     <link rel="stylesheet" href="style.css">
-  <!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">  -->
+    <!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">  -->
 </head>
 <body>
 
-<a href="https://t.me/students_pocket_teacher_bot"> <img class="qr" src="images/qr.png" alt="Picture" height="300px"></a>
-<img src="images/log2.jpg" id="logoTwo" alt="Picture" height="100px">
+
+<a href="https://t.me/students_pocket_teacher_bot"> <img class="qr" src="qr.png" alt="Picture" height="300px"></a>
+<img src="log2.jpg" id="logoTwo" alt="Picture" height="100px">
+
+
 <!--
     <div class="container mt-4">
         <div class="row">
