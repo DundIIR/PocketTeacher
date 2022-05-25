@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6{
     margin: 0 auto;
 }
 
-header{
+.header{
     padding-top: 10px;
 
     width: 100%;
@@ -93,17 +93,67 @@ header{
 
 }
 
-.exit{
-    bottom: 0;
-    right: 0;
+.image_center {
+    display: block;
+    margin: auto;
 }
 
 
-/*.intro{*/
-/*    width: 100%;*/
-/*    height: 100vh;*/
-/*    background: url("/images/1.jpg") center*/
-/*    no-repeat;*/
-/*    -webkit-background-size: cover;*/
-/*    background-size: cover;*/
-/*}*/
+.style{
+    padding-top: 100px;
+
+}
+
+
+#container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 60px auto;
+    position: relative;
+    height: 800px;
+
+}
+
+
+
+
+.table{
+    position: absolute;
+    width: 400px;
+
+    top: 0;
+    right: 0;
+    height: 400px;
+    margin-top: 100px;
+    padding-left: 40px;
+}
+
+.table_had{
+    position: absolute;
+    width: 400px;
+    top: 0;
+    right: 0;
+    height: 30px;
+    margin-top: 10px;
+
+}
+
+.overflow{
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #6e6969;
+    border-radius: 4px;
+    transition: color .1s linear;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #1a1414
+}
+
+
