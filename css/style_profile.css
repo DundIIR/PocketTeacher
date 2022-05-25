@@ -95,6 +95,7 @@ h1, h2, h3, h4, h5, h6{
 .image_center {
     display: block;
     margin: auto;
+}
 
 
 .image_center {
@@ -104,7 +105,8 @@ h1, h2, h3, h4, h5, h6{
 
 
 .style{
-    padding-top: 100px;
+    width: 800px;
+
 
 }
 
@@ -156,8 +158,9 @@ h1, h2, h3, h4, h5, h6{
     transition: color .1s linear;
 }
 
-::-webkit-scrollbar-thumb:hover{
-    background: #1a1414
+::-webkit-scrollbar-thumb:hover {
+    background: #1a1414;
+}
 
 
 

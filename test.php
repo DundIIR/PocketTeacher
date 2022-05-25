@@ -9,7 +9,7 @@
 
 
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -37,8 +37,9 @@
         </div>
     </div>
     <div class="container" id="container">
+        <hr>
         <div class="style">
-            <hr>
+
             <div class="state">
                 <h4> Для чего и зачем нужен английский язык?<br /></h4>
                 <div> Некоторые люди говорят, что очень необходимо изучать иностранные языки, но другие говорят, что учить иностранные языки не важны.
